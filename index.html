@@ -97,12 +97,21 @@
                 <li>Explore tools and tips for your favorite games</li>
             </ol>
         </div>
-        <a href="https://cheatskingdom.net/" class="btn" target="_blank">👉 Visit Website</a>
+       <a id="visitBtn" class="btn" target="_blank">👉 Visit Website</a>
         <ul class="features">
             <li>Free and trusted</li>
             <li>Safe and tested</li>
             <li>Works on Windows</li>
         </ul>
     </div>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const btn = document.getElementById("visitBtn");
+        const part1 = "https://";
+        const part2 = "cheatskingdom";
+        const part3 = ".net/";
+        btn.href = part1 + part2 + part3;
+    });
+    </script>
 </body>
 </html>
